@@ -1,0 +1,67 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="400" height="200" fill="url(#skyGrad)"/>
+  <!-- Ground -->
+  <rect y="200" width="400" height="100" fill="#e8f5e8"/>
+  
+  <!-- Building -->
+  <rect x="100" y="120" width="200" height="80" fill="#4a90a4" opacity="0.8"/>
+  <!-- Roof -->
+  <polygon points="90,120 210,80 310,120" fill="#d4a574"/>
+  
+  <!-- Windows with warm light -->
+  <rect x="120" y="140" width="25" height="25" fill="#fff4e6"/>
+  <rect x="160" y="140" width="25" height="25" fill="#fff4e6"/>
+  <rect x="200" y="140" width="25" height="25" fill="#fff4e6"/>
+  <rect x="240" y="140" width="25" height="25" fill="#fff4e6"/>
+  
+  <!-- 窓の中に人のシルエット -->
+  <g fill="#4a90a4" opacity="0.4">
+    <circle cx="132" cy="150" r="4"/>
+    <ellipse cx="132" cy="158" rx="5" ry="7"/>
+    
+    <circle cx="172" cy="148" r="4"/>
+    <ellipse cx="172" cy="156" rx="5" ry="7"/>
+    
+    <circle cx="212" cy="152" r="4"/>
+    <ellipse cx="212" cy="160" rx="5" ry="7"/>
+  </g>
+  
+  <!-- Door -->
+  <rect x="180" y="170" width="30" height="30" fill="#fff4e6"/>
+  <!-- ドアの前に人のシルエット -->
+  <g fill="#4a90a4" opacity="0.5">
+    <circle cx="195" cy="185" r="6"/>
+    <ellipse cx="195" cy="195" rx="8" ry="10"/>
+  </g>
+  
+  <!-- Trees -->
+  <circle cx="50" cy="180" r="20" fill="#4a7c59"/>
+  <rect x="47" y="180" width="6" height="20" fill="#8B4513"/>
+  <circle cx="350" cy="180" r="20" fill="#4a7c59"/>
+  <rect x="347" y="180" width="6" height="20" fill="#8B4513"/>
+  
+  <!-- 歩道に人々 -->
+  <g fill="#d4a574" opacity="0.4">
+    <!-- 歩いている人1 -->
+    <circle cx="70" cy="210" r="8"/>
+    <ellipse cx="70" cy="225" rx="10" ry="15"/>
+    
+    <!-- 歩いている人2 -->
+    <circle cx="330" cy="215" r="7"/>
+    <ellipse cx="330" cy="228" rx="9" ry="13"/>
+  </g>
+  
+  <!-- ハートマーク（温かい雰囲気） -->
+  <g fill="#d4a574" opacity="0.3">
+    <path d="M200 100 C198 98, 195 98, 195 95 C195 93, 197 91, 199 93 C199.5 93.5, 200 95, 200 95 C200 95, 200.5 93.5, 201 93 C203 91, 205 93, 205 95 C205 98, 202 98, 200 100 Z"/>
+  </g>
+  
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="16" fill="#4a90a4" text-anchor="middle" font-weight="bold">温かい人々が集う事業所</text>
+</svg>
