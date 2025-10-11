@@ -1530,6 +1530,13 @@ html {
     align-items: start;
 }
 
+.attraction-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
 .attraction-text p {
     margin-bottom: 15px;
