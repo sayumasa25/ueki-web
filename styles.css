@@ -761,7 +761,6 @@ body {
 .footer-logo-image {
     max-height: 60px;
     width: auto;
-    filter: brightness(0) invert(1);
     transition: opacity 0.3s ease;
 }
 
