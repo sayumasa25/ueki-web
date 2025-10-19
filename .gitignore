@@ -1,0 +1,47 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Build files
+dist/
+build/
+
+# Deployment files
+windsurf_deployment.yaml
+
+# Node modules (if any)
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Large image files (temporary - to fix push freeze)
+images/トップページ.jpg
+images/一人一人にあったケア.png
+images/安心のサポート体制.png
+images/社長.png
+images/訪問介護だからこそできること.png
+images/コンセプト.jpg
+images/事業所.jpg
+
+# ポモドーロタイマーフォルダ
+ポモドーロタイマー/

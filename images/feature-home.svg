@@ -1,0 +1,31 @@
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="homeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff0f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4527a;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  <circle cx="40" cy="40" r="40" fill="url(#homeGrad)"/>
+  
+  <!-- 家と人のシルエット -->
+  <g fill="#d4527a" opacity="0.8">
+    <!-- 家 -->
+    <polygon points="25,35 40,20 55,35"/>
+    <rect x="30" y="35" width="20" height="20"/>
+    <!-- ドア -->
+    <rect x="37" y="45" width="6" height="10" fill="#fff0f5"/>
+    
+    <!-- 家の前に立つ人（介護者） -->
+    <circle cx="22" cy="45" r="4"/>
+    <ellipse cx="22" cy="52" rx="5" ry="8"/>
+    
+    <!-- 家の中の人（利用者） -->
+    <circle cx="40" cy="42" r="3"/>
+    <ellipse cx="40" cy="47" rx="4" ry="6"/>
+  </g>
+  
+  <!-- つながりを表すハート -->
+  <g fill="#d4527a" opacity="0.6">
+    <path d="M30 30 C29 29, 27 29, 27 27 C27 26, 28 25, 29 26 C29.5 26.5, 30 27, 30 27 C30 27, 30.5 26.5, 31 26 C32 25, 33 26, 33 27 C33 29, 31 29, 30 30 Z"/>
+  </g>
+</svg>
