@@ -34,14 +34,14 @@ node_modules/
 .env.local
 .env.production
 
-# Large image files (temporary - to fix push freeze)
-images/トップページ.jpg
-images/一人一人にあったケア.png
-images/安心のサポート体制.png
-images/社長.png
-images/訪問介護だからこそできること.png
-images/コンセプト.jpg
-images/事業所.jpg
+# 以下の画像ファイルは必要に応じてコメントアウト
+# images/トップページ.jpg
+# images/一人一人にあったケア.png
+# images/安心のサポート体制.png
+# images/社長.png
+# images/訪問介護だからこそできること.png
+# images/コンセプト.jpg
+# images/事業所.jpg
 
 # ポモドーロタイマーフォルダ
 ポモドーロタイマー/
