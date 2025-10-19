@@ -1,0 +1,25 @@
+{
+  "name": "ueki-web",
+  "version": "1.0.0",
+  "description": "ケアステーションソラナ広島の公式ウェブサイト - microCMS連携対応",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "healthcare",
+    "care-station",
+    "hiroshima",
+    "microcms",
+    "static-site"
+  ],
+  "author": "ケアステーションソラナ広島",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sayumasa25/ueki-web.git"
+  },
+  "homepage": "https://github.com/sayumasa25/ueki-web#readme"
+}
