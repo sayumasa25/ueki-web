@@ -693,7 +693,8 @@ body {
 
 .phone-hours {
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: #333;
+    font-weight: 600;
 }
 
 .contact-form {
@@ -1470,6 +1471,11 @@ html {
 
 .contact-info p {
     margin: 8px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.cta-section .contact-info p {
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1485,6 +1491,108 @@ html {
     
     .benefits-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* LINE Contact Styles */
+.line-contact {
+    background: #00B900;
+    color: white !important;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+
+.line-contact:hover {
+    background: #009900;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 185, 0, 0.3);
+    color: white;
+}
+
+/* 吹き出し絵文字を削除 */
+
+/* Fixed LINE Icon */
+.line-fixed-icon {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #00B900;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-image: url('images/Mobile PNG Images _ SimilarPNG.jfif');
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.line-fixed-icon:hover {
+    background: #009900 url('images/Mobile PNG Images _ SimilarPNG.jfif') center/60px 60px no-repeat;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 画像を使用するため::beforeを無効化 */
+.line-fixed-icon::before {
+    content: none;
+}
+
+@media (max-width: 768px) {
+    .line-fixed-icon {
+        width: 50px;
+        height: 50px;
+        bottom: 80px;
+        right: 15px;
+        background-size: 50px 50px;
+    }
+    
+    .line-fixed-icon::before {
+        content: none;
+    }
+    
+    /* ニュース記事のモバイル対応 */
+    .news-item.with-image {
+        flex-direction: column !important;
+        padding: 20px !important;
+        gap: 20px !important;
+    }
+    
+    .news-item.with-image .news-thumbnail {
+        width: 100% !important;
+        height: 200px !important;
+    }
+    
+    .news-item.with-image .news-content {
+        padding: 0 !important;
+    }
+    
+    .news-item.without-image {
+        flex-direction: column !important;
+        padding: 20px !important;
+        gap: 20px !important;
+    }
+    
+    .news-item.without-image .news-no-image {
+        width: 100% !important;
+        height: 150px !important;
+    }
+    
+    .news-item.without-image .news-content {
+        padding: 0 !important;
     }
 }
 
@@ -1536,6 +1644,84 @@ html {
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-item.with-image {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.news-item.with-image .news-thumbnail {
+    width: 280px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-item.with-image .news-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.news-item.with-image .news-thumbnail img:hover {
+    transform: scale(1.05);
+}
+
+.news-item.with-image .news-content {
+    flex: 1;
+    padding: 0;
+}
+
+/* ニュース記事内の画像サイズ制限 */
+.news-content-text img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ニュース記事内の画像を中央寄せ */
+.news-content-text p img {
+    display: block;
+    margin: 20px auto;
+}
+
+/* 画像なしニュース記事のスタイル */
+.news-item.without-image {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.news-item.without-image .news-no-image {
+    width: 280px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #dee2e6;
+    color: #6c757d;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.news-item.without-image .news-content {
+    flex: 1;
+    padding: 0;
 }
 
 .attraction-text p {
